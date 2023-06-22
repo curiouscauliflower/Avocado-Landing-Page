@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avocados 🥑</title>
+    <style>
+      body {
+        background-image: url(https://image.slidesdocs.com/responsive-images/background/yellow-food-avocado-fruit-watercolor-cute-powerpoint-background_57cdedf4a5__960_540.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      .container {
+        background: linear-gradient(
+          0deg,
+          rgba(43, 163, 123, 0.6) 0%,
+          rgba(167, 226, 55, 1) 100%
+        );
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        border-radius: 10px;
+        color: #fff;
+        width: 50%;
+        padding: 30px 50px;
+        margin: 30px auto;
+      }
+      h1 {
+        text-align: center;
+        font-weight: 700;
+        border: 1px solid #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+        border-radius: 4px;
+        max-width: 100%;
+      }
+      .first-paragraph {
+        line-height: 1.5;
+        font-size: 24px;
+        text-align: justify;
+      }
+
+      .second-paragraph {
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .third-paragraph {
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #fff;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .learn-more {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .learn-more:hover {
+        color: #066056;
+        text-decoration: underline;
+      }
+
+      .recipes {
+        color: #066056;
+        text-decoration: none;
+      }
+
+      .recipes:hover {
+        color: #fdfcce;
+        text-decoration: underline;
+      }
+
+      span {
+        color: #066056;
+      }
+
+      .buy-button {
+        display: block;
+        margin: 0 auto;
+        background-color: #066056;
+        color: #fff;
+        padding: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.6;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .buy-button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      .footer {
+        text-align: center;
+        margin: 50px 0 0 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .who-codes {
+        text-decoration: none;
+        color: #066056;
+      }
+
+      .who-codes:hover {
+        text-decoration: underline;
+        color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><em>Can you guess what I love most?</em></h1>
+      <h2>I love <strong>Avocados</strong></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/717/original/AvocadosBANNER.jpg?1681809931"
+        alt="Avocados"
+      />
+      <hr />
+      <p class="first-paragraph">
+        Also known as an alligator pear or butter fruit,
+        <a
+          href="https://en.wikipedia.org/wiki/Avocado"
+          target="_blank"
+          class="learn-more"
+          ><em>avocados</em></a
+        >
+        are actually a type of berry. They grow in warm climates. Avocados
+        contain a wide range of nutrients and may have various health benefits.
+        Soft avocados, for example, make delicious guacamole, while firmer
+        avocados are great for slicing and adding to a salad or sandwich. People
+        can use avocados in many other forms, such as an oil for cooking or
+        moisturizing the skin or hair.
+      </p>
+      <hr />
+      <p class="second-paragraph">
+        <em
+          >Click
+          <a
+            class="recipes"
+            href="https://www.delish.com/cooking/recipe-ideas/g2894/things-to-do-with-avocado/"
+            target="_blank"
+          >
+            here</a
+          >
+          for delicious avocado recipes</em
+        >
+      </p>
+      <p class="third-paragraph">
+        Found a cool recipe, but don't have any <span>avocados</span> at home?
+        😲
+        <br />
+        Don't be sad 😔
+        <br />
+        You can order some <span>avocados</span> by simply clicking the button
+        below 👇
+      </p>
+
+      <button class="buy-button">🥑 Buy Avocados</button>
+      <p class="footer">
+        This page was built by
+        <a
+          class="who-codes"
+          href="https://www.linkedin.com/in/hanna-tkach-31a32b277"
+          target="_blank"
+          rel="noreffer noopener nofollow"
+        >
+          Hanna Tkach
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let quantity = prompt("How many avocados do you want to order?");
+        if (quantity <= 2) {
+          alert(
+            "Dear, " +
+              name +
+              "! Do you really think you have enough? Order more."
+          );
+        } else {
+          if (quantity >= 3) {
+            alert(
+              "Nice choice, " +
+                name +
+                "! We'll be in touch by your e-mail address. Have a good avocado day!"
+            );
+          }
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
